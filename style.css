@@ -16,6 +16,9 @@ body{
     color: var(--gblue);
     font-size: 16px;
 }
+main{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
 h1{
     color: var(--cyan);
 }
@@ -30,6 +33,11 @@ button{
     padding:5px ;
     width: calc(100% - 20px);
     margin:  10px 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 5px;
+}
+button:hover{
+    cursor: pointer;
 }
 span{
     color: white;
@@ -42,7 +50,10 @@ span{
 .lgreen{
     background-color: var(--lgreen);
     color: var(--lgrey);
-    border-radius: 0 0 8px 5px;
+  
+}
+.dollar{
+    font-size: 30px;
 }
 
 @media screen and (max-width:500px) {
@@ -59,13 +70,39 @@ span{
     }
    .lgreen{
      padding:20px 20px;
-     /* padding-right: 40px; */
+     border-radius: 0 0 8px 5px;
    }
    .dgreen{
        padding: 20px 20px;
    }
-   .dollar{
-       font-size: 30px;
-   }
+   
     
+}
+@media screen and (min-width:501px){
+    main{
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        width: 450px;
+        margin: 100px auto;
+        
+        border-radius: 5px;
+    }
+    .bottom{
+        display: flex;
+    }
+    .top{
+        padding:20px;
+    }
+    .lgreen{
+        width: 50%;
+        padding: 20px;
+        border-radius: 0 0 5px 0;
+    }
+    .dgreen{
+        width: 50%;
+        padding: 20px;
+        border-radius: 0 0 0 5px;
+    }
+
 }
